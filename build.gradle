@@ -1,0 +1,37 @@
+plugins {
+    id 'java'
+}
+
+group 'myProj'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile("org.springframework:spring-context:4.1.6.RELEASE")
+    compileOnly 'org.projectlombok:lombok:1.18.0'
+    compile 'org.hibernate:hibernate-validator:6.0.10.Final'
+    compile 'org.hibernate.javax.persistence:hibernate-jpa-2.0-api:1.0.0.Final'
+    compile 'javax.transaction:jta:1.1'
+    compile 'javax.validation:validation-api:1.0.0.GA'
+    compile 'org.hibernate:hibernate-validator:4.0.2.GA'
+    compile 'org.jboss.javaee:jboss-jacc-api:1.1.0.GA'
+    compile 'org.postgresql:postgresql:42.2.2'
+    compile 'javax.xml.bind:jaxb-api:2.3.0'
+    compile 'javax.activation:activation:1.1.1'
+    compile 'org.springframework.boot:spring-boot-starter-data-jpa'
+    //  compile 'org.springframework.cloud:spring-cloud-starter-security:1.2.2.RELEASE'
+    //   compile 'org.springframework.security.oauth:spring-security-oauth2:2.3.3.RELEASE'
+    compile 'org.springframework.security.oauth.boot:spring-security-oauth2-autoconfigure:2.0.1.RELEASE'
+    compile 'com.sun.xml.bind:jaxb-impl:2.3.0.1'
+    compile 'com.sun.xml.bind:jaxb-core:2.3.0.1'
+    compile 'org.springframework.boot:spring-boot-configuration-processor'
+    compile 'com.github.dozermapper:dozer-spring-boot-starter:6.2.0'
+    compile 'com.github.dozermapper:dozer-core:6.2.0'
+
+}
